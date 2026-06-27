@@ -10,5 +10,15 @@ public class ServerRunner {
         System.out.println("Type:"+server.type);
         System.out.println("Name:"+server.name);
         System.out.println("Capacity:"+server.capacity);
+
+        Server<Character,String,Double> server2 = new Server<>();
+        server2.type='A';
+        server2.name="Chrome";
+        server2.capacity=145.85;
+
+        System.out.println("Type:"+server2.type);
+        System.out.println("Name:"+server2.name);
+        System.out.println("Capacity:"+server2.capacity);
+
     }
 }

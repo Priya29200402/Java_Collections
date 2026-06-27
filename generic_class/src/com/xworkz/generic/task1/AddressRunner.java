@@ -11,5 +11,10 @@ public class AddressRunner {
         System.out.println("Pincode:"+address.pincode);
         System.out.println("city:"+address.city);
 
+        Address <String,Integer,String> address2 = new Address<>();
+        address2.type="Urban";
+        address2.pincode=123;
+        address2.city="Belagavi";
+
     }
 }
