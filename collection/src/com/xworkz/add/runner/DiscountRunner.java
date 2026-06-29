@@ -19,7 +19,7 @@ public class DiscountRunner {
         discountDTOS.add(discount4);
         discountDTOS.add(discount5);
 
-        Collection<DiscountDTO> discountDTOS1 = new LinkedList<>();
+        Collection<DiscountDTO> discountDTOS1 = new LinkedList();
         discountDTOS1.add(discount1);
         discountDTOS1.add(discount2);
         discountDTOS1.add(discount3);

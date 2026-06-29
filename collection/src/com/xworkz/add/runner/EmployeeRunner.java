@@ -28,7 +28,7 @@ public class EmployeeRunner {
         employeeDTOS1.add(employee4);
         employeeDTOS1.add(employee5);
 
-        Collection<EmployeeDTO> employeeDTOS2=new HashSet<>();
+        Collection<EmployeeDTO> employeeDTOS2=new HashSet<>(12);
         employeeDTOS2.add(employee1);
         employeeDTOS2.add(employee2);
 
