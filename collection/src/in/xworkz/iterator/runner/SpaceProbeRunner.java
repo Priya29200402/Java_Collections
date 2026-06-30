@@ -4,6 +4,7 @@ import in.xworkz.iterator.dto.SpaceProbeDTO;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class SpaceProbeRunner {
@@ -1578,7 +1579,7 @@ public class SpaceProbeRunner {
 
         SpaceProbeDTO probe393 = new SpaceProbeDTO("SP-393", "Quantum Network Visualizer", "Space", "NASA", 134000.0,
                 LocalDateTime.of(2735, 5, 1, 10, 0), LocalDateTime.of(2745, 8, 1, 12, 0),
-                "None", 67000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Visualize", "Spectrometer", 134000, false, "Proposed", 2680.0, "L2 Halo");
+                "Solar Electric", 67000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Visualize", "Spectrometer", 134000, false, "Proposed", 2680.0, "L2 Halo");
 
         SpaceProbeDTO probe394 = new SpaceProbeDTO("SP-394", "Quantum Network Simulator", "Space", "ESA", 135000.0,
                 LocalDateTime.of(2740, 5, 1, 10, 0), LocalDateTime.of(2750, 8, 1, 12, 0),
@@ -1586,11 +1587,11 @@ public class SpaceProbeRunner {
 
         SpaceProbeDTO probe395 = new SpaceProbeDTO("SP-395", "Quantum Network Emulator", "Space", "NASA", 136000.0,
                 LocalDateTime.of(2745, 5, 1, 10, 0), LocalDateTime.of(2755, 8, 1, 12, 0),
-                "None", 68000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Emulate", "Spectrometer", 136000, false, "Proposed", 2720.0, "L2 Halo");
+                "Solar Electric", 68000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Emulate", "Spectrometer", 136000, false, "Proposed", 2720.0, "L2 Halo");
 
         SpaceProbeDTO probe396 = new SpaceProbeDTO("SP-396", "Quantum Network Tester", "Space", "ESA", 137000.0,
                 LocalDateTime.of(2750, 5, 1, 10, 0), LocalDateTime.of(2760, 8, 1, 12, 0),
-                "None", 68500.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Test", "Spectrometer", 137000, false, "Proposed", 2740.0, "L2 Halo");
+                "Solar Electric", 68500.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Test", "Spectrometer", 137000, false, "Proposed", 2740.0, "L2 Halo");
 
         SpaceProbeDTO probe397 = new SpaceProbeDTO("SP-397", "Quantum Network Debugger", "Space", "NASA", 138000.0,
                 LocalDateTime.of(2755, 5, 1, 10, 0), LocalDateTime.of(2765, 8, 1, 12, 0),
@@ -1598,7 +1599,7 @@ public class SpaceProbeRunner {
 
         SpaceProbeDTO probe398 = new SpaceProbeDTO("SP-398", "Quantum Network Profiler", "Space", "ESA", 139000.0,
                 LocalDateTime.of(2760, 5, 1, 10, 0), LocalDateTime.of(2770, 8, 1, 12, 0),
-                "None", 69500.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Profile", "Spectrometer", 139000, false, "Proposed", 2780.0, "L2 Halo");
+                "Solar Electric", 69500.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Profile", "Spectrometer", 139000, false, "Proposed", 2780.0, "L2 Halo");
 
         SpaceProbeDTO probe399 = new SpaceProbeDTO("SP-399", "Quantum Network Optimizer", "Space", "NASA", 140000.0,
                 LocalDateTime.of(2765, 5, 1, 10, 0), LocalDateTime.of(2775, 8, 1, 12, 0),
@@ -1952,11 +1953,11 @@ public class SpaceProbeRunner {
                 LocalDateTime.of(3200, 5, 1, 10, 0), LocalDateTime.of(3210, 8, 1, 12, 0),
                 "None", 113000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Pattern", "Spectrometer", 226000, false, "Proposed", 4520.0, "L2 Halo");
 
-        SpaceProbeDTO probe487 = new SpaceProbeDTO("SP-487", "Quantum Network Model", "Space", "NASA", 227000.0,
+        SpaceProbeDTO probe487 = new SpaceProbeDTO("SP-487", "Quantum Network Model", "Mars", "NASA", 227000.0,
                 LocalDateTime.of(3205, 5, 1, 10, 0), LocalDateTime.of(3215, 8, 1, 12, 0),
                 "None", 113500.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Model", "Spectrometer", 227000, false, "Proposed", 4540.0, "L2 Halo");
 
-        SpaceProbeDTO probe488 = new SpaceProbeDTO("SP-488", "Quantum Network Framework", "Space", "ESA", 228000.0,
+        SpaceProbeDTO probe488 = new SpaceProbeDTO("SP-488", "Quantum Network Framework", "Mars", "ESA", 228000.0,
                 LocalDateTime.of(3210, 5, 1, 10, 0), LocalDateTime.of(3220, 8, 1, 12, 0),
                 "None", 114000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Framework", "Spectrometer", 228000, false, "Proposed", 4560.0, "L2 Halo");
 
@@ -1964,7 +1965,7 @@ public class SpaceProbeRunner {
                 LocalDateTime.of(3215, 5, 1, 10, 0), LocalDateTime.of(3225, 8, 1, 12, 0),
                 "None", 114500.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Structure", "Spectrometer", 229000, false, "Proposed", 4580.0, "L2 Halo");
 
-        SpaceProbeDTO probe490 = new SpaceProbeDTO("SP-490", "Quantum Network Architecture", "Space", "ESA", 230000.0,
+        SpaceProbeDTO probe490 = new SpaceProbeDTO("SP-490", "Quantum Network Architecture", "Mars", "ESA", 230000.0,
                 LocalDateTime.of(3220, 5, 1, 10, 0), LocalDateTime.of(3230, 8, 1, 12, 0),
                 "None", 115000.0, "Ka-Band", 1500000000.0, 0.2, "Quantum Architecture", "Spectrometer", 230000, false, "Proposed", 4600.0, "L2 Halo");
 
@@ -2510,10 +2511,390 @@ public class SpaceProbeRunner {
         spaceProbes.add(probe499);
         spaceProbes.add(probe500);
 
-        System.out.println("Total Space Probes: " + spaceProbes.size());
-        for (SpaceProbeDTO probe : spaceProbes) {
-            System.out.println(probe);
+        System.out.println("Total Space Probes:" + spaceProbes.size());
+
+        //Counting/Filtering Questions
+        Iterator<SpaceProbeDTO> iterator1 = spaceProbes.iterator();
+        int statusCount=0;
+        while (iterator1.hasNext()) {
+            SpaceProbeDTO element = iterator1.next();
+            if(element.getStatus().equals("Active"))
+            {
+                System.out.println(element);
+                statusCount++;
+            }
         }
+        System.out.println("Total Space Probes with Active Status:" + statusCount);
+
+       Iterator<SpaceProbeDTO> iterator2=spaceProbes.iterator();
+        int propulsionCount=0;
+        while (iterator2.hasNext()){
+            SpaceProbeDTO element = iterator2.next();
+            if(element.getPropulsionType().equals("Solar Electric"))
+            {
+                System.out.println(element);
+                propulsionCount++;
+            }
+
+        }
+        System.out.println("Total Space Probes with Solar Electric Propulsion:" + propulsionCount);
+
+        Iterator<SpaceProbeDTO> iterator3=spaceProbes.iterator();
+        int activeCount=0;
+        while (iterator3.hasNext()){
+            SpaceProbeDTO element = iterator3.next();
+            if(element.isActive())
+            {
+                System.out.println(element);
+                activeCount++;
+            }
+        }
+        System.out.println("Total Space Probes that are Active:" + activeCount);
+
+        Iterator<SpaceProbeDTO> iterator4= spaceProbes.iterator();
+        int marsCount=0;
+        while(iterator4.hasNext()){
+            SpaceProbeDTO element = iterator4.next();
+            if(element.getTargetCelestialBody().equals("Mars"))
+            {
+                System.out.println(element);
+                marsCount++;
+            }
+        }
+        System.out.println("Total Space Probes to Mars:" + marsCount);
+
+        Iterator<SpaceProbeDTO> iterator5 = spaceProbes.iterator();
+        int fuelCount = 0;
+        while (iterator5.hasNext()) {
+            SpaceProbeDTO element = iterator5.next();
+            if (element.getFuelRemaining() < 50) {
+                System.out.println(element);
+                fuelCount++;
+            }
+        }
+        System.out.println("Total Space Probes with fuelRemaining less than 50:" + fuelCount);
+
+        Iterator<SpaceProbeDTO> iterator6 = spaceProbes.iterator();
+        int nasaCount = 0;
+        while (iterator6.hasNext()) {
+            SpaceProbeDTO element = iterator6.next();
+            if (element.getManufacturer().equals("NASA")) {
+                System.out.println(element);
+                nasaCount++;
+            }
+        }
+        System.out.println("Total Space Probes manufactured by NASA:" + nasaCount);
+
+        Iterator<SpaceProbeDTO> iterator7 = spaceProbes.iterator();
+        int durationCount = 0;
+        while (iterator7.hasNext()) {
+            SpaceProbeDTO element = iterator7.next();
+            if (element.getMissionDurationDays() > 365) {
+                System.out.println(element);
+                durationCount++;
+            }
+        }
+        System.out.println("Total Space Probes with missionDurationDays greater than 365:" + durationCount);
+
+        Iterator<SpaceProbeDTO> iterator8 = spaceProbes.iterator();
+        int powerCount = 0;
+        while (iterator8.hasNext()) {
+            SpaceProbeDTO element = iterator8.next();
+            if (element.getPowerOutput() > 1000) {
+                System.out.println(element);
+                powerCount++;
+            }
+        }
+        System.out.println("Total Space Probes with powerOutput above 1000 watts:" + powerCount);
+
+        Iterator<SpaceProbeDTO> iterator9 = spaceProbes.iterator();
+        int distanceCount = 0;
+        while (iterator9.hasNext()) {
+            SpaceProbeDTO element = iterator9.next();
+            if (element.getDistanceFromEarth() < 1000000) {
+                System.out.println(element);
+                distanceCount++;
+            }
+        }
+        System.out.println("Total Space Probes within 1 million km of Earth:" + distanceCount);
+
+        Iterator<SpaceProbeDTO> iterator10 = spaceProbes.iterator();
+        int cameraCount = 0;
+        while (iterator10.hasNext()) {
+            SpaceProbeDTO element = iterator10.next();
+            if (element.getPrimaryInstrument().equals("Camera")) {
+                System.out.println(element);
+                cameraCount++;
+            }
+        }
+        System.out.println("Total Space Probes with primaryInstrument Camera:" + cameraCount);
+
+        Iterator<SpaceProbeDTO> iterator11 = spaceProbes.iterator();
+        int failedCount = 0;
+        while (iterator11.hasNext()) {
+            SpaceProbeDTO element = iterator11.next();
+            if (element.getStatus().equals("Failed")) {
+                System.out.println(element);
+                failedCount++;
+            }
+        }
+        System.out.println("Total Space Probes with status Failed:" + failedCount);
+
+        Iterator<SpaceProbeDTO> iterator12 = spaceProbes.iterator();
+        int launchDateCount = 0;
+        LocalDateTime cutoffDate = LocalDateTime.of(2020, 1, 1, 0, 0);
+        while (iterator12.hasNext()) {
+            SpaceProbeDTO element = iterator12.next();
+            if (element.getLaunchDate().isAfter(cutoffDate)) {
+                System.out.println(element);
+                launchDateCount++;
+            }
+        }
+        System.out.println("Total Space Probes launched after January 1, 2020:" + launchDateCount);
+
+        Iterator<SpaceProbeDTO> iterator13 = spaceProbes.iterator();
+        int velocityCount = 0;
+        while (iterator13.hasNext()) {
+            SpaceProbeDTO element = iterator13.next();
+            if (element.getOrbitalVelocity() > 30) {
+                System.out.println(element);
+                velocityCount++;
+            }
+        }
+        System.out.println("Total Space Probes with orbitalVelocity greater than 30 km/s:" + velocityCount);
+
+        Iterator<SpaceProbeDTO> iterator14 = spaceProbes.iterator();
+        int xBandCount = 0;
+        while (iterator14.hasNext()) {
+            SpaceProbeDTO element = iterator14.next();
+            if (element.getCommunicationFrequency().equals("X-Band")) {
+                System.out.println(element);
+                xBandCount++;
+            }
+        }
+        System.out.println("Total Space Probes with communicationFrequency X-Band:" + xBandCount);
+
+        Iterator<SpaceProbeDTO> iterator15 = spaceProbes.iterator();
+        int massCount = 0;
+        while (iterator15.hasNext()) {
+            SpaceProbeDTO element = iterator15.next();
+            if (element.getLaunchMass() > 1000) {
+                System.out.println(element);
+                massCount++;
+            }
+        }
+        System.out.println("Total Space Probes with launchMass greater than 1000 kg:" + massCount);
+
+       // Removal Questions
+
+        Iterator<SpaceProbeDTO> removeIterator1 = spaceProbes.iterator();
+        int lostStatusCount=0;
+        while (removeIterator1.hasNext()) {
+            SpaceProbeDTO element = removeIterator1.next();
+            if (element.getStatus().equals("Lost")) {
+                removeIterator1.remove();
+                lostStatusCount++;
+            }
+        }
+        System.out.println("Removed probes with status Lost: " + lostStatusCount);
+
+        Iterator<SpaceProbeDTO> removeIterator2 = spaceProbes.iterator();
+        int fuelRemovedCount=0;
+        while (removeIterator2.hasNext()) {
+            SpaceProbeDTO element = removeIterator2.next();
+            if (element.getFuelRemaining() < 10) {
+                removeIterator2.remove();
+                fuelRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with fuelRemaining less than 10:" + fuelRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator3 = spaceProbes.iterator();
+        int inactiveRemovedCount = 0;
+        while (removeIterator3.hasNext()) {
+            SpaceProbeDTO element = removeIterator3.next();
+            if (!element.isActive()) {
+                removeIterator3.remove();
+                inactiveRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes that are not active: " + inactiveRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator4 = spaceProbes.iterator();
+        int moonRemovedCount = 0;
+        while (removeIterator4.hasNext()) {
+            SpaceProbeDTO element = removeIterator4.next();
+            if (element.getTargetCelestialBody().equals("Moon")) {
+                removeIterator4.remove();
+                moonRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes targeting Moon: " + moonRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator5 = spaceProbes.iterator();
+        int durationRemovedCount = 0;
+        while (removeIterator5.hasNext()) {
+            SpaceProbeDTO element = removeIterator5.next();
+            if (element.getMissionDurationDays() < 100) {
+                removeIterator5.remove();
+                durationRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with missionDurationDays less than 100: " + durationRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator6 = spaceProbes.iterator();
+        int chemicalRemovedCount = 0;
+        while (removeIterator6.hasNext()) {
+            SpaceProbeDTO element = removeIterator6.next();
+            if (element.getPropulsionType().equals("Solar Electric")) {
+                removeIterator6.remove();
+                chemicalRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with propulsionType Solar Electric: " + chemicalRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator7 = spaceProbes.iterator();
+        int distanceRemovedCount = 0;
+        while (removeIterator7.hasNext()) {
+            SpaceProbeDTO element = removeIterator7.next();
+            if (element.getDistanceFromEarth() > 10000000) {
+                removeIterator7.remove();
+                distanceRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with distanceFromEarth greater than 10 million km: " + distanceRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator8 = spaceProbes.iterator();
+        int powerRemovedCount = 0;
+        while (removeIterator8.hasNext()) {
+            SpaceProbeDTO element = removeIterator8.next();
+            if (element.getPowerOutput() < 500) {
+                removeIterator8.remove();
+                powerRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with powerOutput less than 500 watts: " + powerRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator9 = spaceProbes.iterator();
+        int abortedRemovedCount = 0;
+        while (removeIterator9.hasNext()) {
+            SpaceProbeDTO element = removeIterator9.next();
+            if (element.getStatus().equals("Crashed")) {
+                removeIterator9.remove();
+                abortedRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with status Crashed: " + abortedRemovedCount);
+
+        // Multiple Property Counts
+        Iterator<SpaceProbeDTO> countIterator1 = spaceProbes.iterator();
+        int successActiveCount = 0;
+        while (countIterator1.hasNext()) {
+            SpaceProbeDTO element = countIterator1.next();
+            if (element.getStatus().equals("Active") && element.isActive()) {
+                successActiveCount++;
+            }
+        }
+        System.out.println("Total probes with status Active and isActive = true: " + successActiveCount);
+
+        Iterator<SpaceProbeDTO> countIterator2 = spaceProbes.iterator();
+        int marsEsaCount = 0;
+        while (countIterator2.hasNext()) {
+            SpaceProbeDTO element = countIterator2.next();
+            if (element.getTargetCelestialBody().equals("Mars") && element.getManufacturer().equals("ESA")) {
+                marsEsaCount++;
+            }
+        }
+        System.out.println("Total probes targeting Mars AND manufactured by ESA: " + marsEsaCount);
+
+        Iterator<SpaceProbeDTO> countIterator3 = spaceProbes.iterator();
+        int durationActiveCount = 0;
+        while (countIterator3.hasNext()) {
+            SpaceProbeDTO element = countIterator3.next();
+            if (element.getMissionDurationDays() > 500 && element.isActive()) {
+                durationActiveCount++;
+            }
+        }
+        System.out.println("Total probes with missionDurationDays > 500 AND isActive = true: " + durationActiveCount);
+
+        Iterator<SpaceProbeDTO> countIterator4 = spaceProbes.iterator();
+        int instrumentCount = 0;
+        while (countIterator4.hasNext()) {
+            SpaceProbeDTO element = countIterator4.next();
+            if (element.getPrimaryInstrument().equals("Spectrometer") && element.getSecondaryInstrument().equals("Camera")) {
+                instrumentCount++;
+            }
+        }
+        System.out.println("Total probes with primaryInstrument Spectrometer AND secondaryInstrument Camera: " + instrumentCount);
+
+        Iterator<SpaceProbeDTO> countIterator5 = spaceProbes.iterator();
+        int velocityFuelCount = 0;
+        while (countIterator5.hasNext()) {
+            SpaceProbeDTO element = countIterator5.next();
+            if (element.getOrbitalVelocity() > 25 && element.getFuelRemaining() > 50) {
+                velocityFuelCount++;
+            }
+        }
+        System.out.println("Total probes with orbitalVelocity > 25 AND fuelRemaining > 50: " + velocityFuelCount);
+
+        // removing multiple properties
+        Iterator<SpaceProbeDTO> removeIterator11 = spaceProbes.iterator();
+        int fuelFailedCount = 0;
+        while (removeIterator11.hasNext()) {
+            SpaceProbeDTO element = removeIterator11.next();
+            if (element.getFuelRemaining() < 20 && element.getStatus().equals("Lost")) {
+                removeIterator11.remove();
+                fuelFailedCount++;
+            }
+        }
+        System.out.println("Removed probes with fuelRemaining < 20 AND status Failed: " + fuelFailedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator12 = spaceProbes.iterator();
+        int massPowerRemovedCount = 0;
+        while (removeIterator12.hasNext()) {
+            SpaceProbeDTO element = removeIterator12.next();
+            if (element.getLaunchMass() > 2000 && element.getPowerOutput() < 1000) {
+                removeIterator12.remove();
+                massPowerRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with launchMass > 2000 AND powerOutput < 1000: " + massPowerRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator13 = spaceProbes.iterator();
+        int solarDistanceRemovedCount = 0;
+        while (removeIterator13.hasNext()) {
+            SpaceProbeDTO element = removeIterator13.next();
+            if (element.getPropulsionType().equals("Solar Electric") && element.getDistanceFromEarth() > 5000000) {
+                removeIterator13.remove();
+                solarDistanceRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with propulsionType Solar Electric AND distanceFromEarth > 5 million km: " + solarDistanceRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator14 = spaceProbes.iterator();
+        LocalDateTime cutoffDate2015 = LocalDateTime.of(2015, 1, 1, 0, 0);
+        int dateSuccessRemovedCount = 0;
+        while (removeIterator14.hasNext()) {
+            SpaceProbeDTO element = removeIterator14.next();
+            if (element.getLaunchDate().isBefore(cutoffDate2015) && element.getStatus().equals("Active")) {
+                removeIterator14.remove();
+                dateSuccessRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with launchDate before 2015 AND status Success: " + dateSuccessRemovedCount);
+
+        Iterator<SpaceProbeDTO> removeIterator15 = spaceProbes.iterator();
+        int isroMoonRemovedCount = 0;
+        while (removeIterator15.hasNext()) {
+            SpaceProbeDTO element = removeIterator15.next();
+            if (element.getManufacturer().equals("ISRO") && element.getTargetCelestialBody().equals("Moon")) {
+                removeIterator15.remove();
+                isroMoonRemovedCount++;
+            }
+        }
+        System.out.println("Removed probes with manufacturer ISRO AND targetCelestialBody Moon: " + isroMoonRemovedCount);
+
+        //Multiple Property Conditions
     }
 
 }
