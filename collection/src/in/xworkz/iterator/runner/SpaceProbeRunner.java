@@ -2925,6 +2925,5 @@ public class SpaceProbeRunner {
         }
         System.out.println("Total Space Probes targeting Jupiter:" + countTarget);
         
-
     }
 }
