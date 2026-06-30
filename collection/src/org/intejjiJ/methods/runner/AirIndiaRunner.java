@@ -69,18 +69,36 @@ public class AirIndiaRunner {
         airIndiaDTOs.add(new AirIndiaDTO("Pallavi Joshi", "Pune", "Paris", "Pune International Airport", "Charles de Gaulle Airport", "India", "France", LocalDate.of(2026, 1, 13)));
         airIndiaDTOs.add(new AirIndiaDTO("Darshan Patil", "Belagavi", "Dubai", "Belagavi Airport", "Dubai International Airport", "India", "UAE", LocalDate.of(2026, 2, 19)));
 
-        AirIndiaDTO airIndiaDTO = new AirIndiaDTO("Darshan Patil", "Belagavi", "Dubai", "Belagavi Airport", "Dubai International Airport", "India", "UAE", LocalDate.of(2026, 2, 19));
-
         System.out.println("Total Air India DTOs: " + airIndiaDTOs.size());
 
         //Contains method
-        boolean contains = airIndiaDTOs.contains(airIndiaDTO);
-        System.out.println("Contains Delhi: " + contains);
+        AirIndiaDTO checkDTO = new AirIndiaDTO("Rahul Sharma", "Delhi", "New York", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5));
 
-        //remove method
-        if(contains){
-            airIndiaDTOs.remove(airIndiaDTO);
-        }
-        System.out.println("Total airIndiaDTO after removing"+ airIndiaDTOs.size());
+        boolean contains = airIndiaDTOs.contains(checkDTO);
+        System.out.println("List contains Rahul Sharma data: " + contains);
+
+        //containsAll method
+        System.out.println("\n========== containsAll() ==========");
+        List<AirIndiaDTO> checkList = new ArrayList<>();
+
+        checkList.add(new AirIndiaDTO("Rahul Sharma", "Delhi", "New York", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        checkList.add(new AirIndiaDTO("Priya Patil", "Mumbai", "London", "Chhatrapati Shivaji Maharaj International Airport", "Heathrow Airport", "India", "UK", LocalDate.of(2022, 2, 12)));
+
+        boolean containsAllResult = airIndiaDTOs.containsAll(checkList);
+
+        System.out.println("Main list contains all checkList data: " + containsAllResult);
+
+        //removeAll method
+        System.out.println("\n========== removeAll() ==========");
+        
+        System.out.println("Size before removeAll: " + airIndiaDTOs.size());
+
+        boolean removeAllResult = airIndiaDTOs.removeAll(checkList);
+
+        System.out.println("Data removed from main list:" + removeAllResult);
+        System.out.println("Size after removeAll: " + airIndiaDTOs.size());
+
+        //
+
     }
 }
