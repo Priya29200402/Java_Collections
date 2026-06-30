@@ -2515,23 +2515,21 @@ public class SpaceProbeRunner {
 
         //Counting/Filtering Questions
         Iterator<SpaceProbeDTO> iterator1 = spaceProbes.iterator();
-        int statusCount=0;
+        int statusCount = 0;
         while (iterator1.hasNext()) {
             SpaceProbeDTO element = iterator1.next();
-            if(element.getStatus().equals("Active"))
-            {
+            if (element.getStatus().equals("Active")) {
                 System.out.println(element);
                 statusCount++;
             }
         }
         System.out.println("Total Space Probes with Active Status:" + statusCount);
 
-       Iterator<SpaceProbeDTO> iterator2=spaceProbes.iterator();
-        int propulsionCount=0;
-        while (iterator2.hasNext()){
+        Iterator<SpaceProbeDTO> iterator2 = spaceProbes.iterator();
+        int propulsionCount = 0;
+        while (iterator2.hasNext()) {
             SpaceProbeDTO element = iterator2.next();
-            if(element.getPropulsionType().equals("Solar Electric"))
-            {
+            if (element.getPropulsionType().equals("Solar Electric")) {
                 System.out.println(element);
                 propulsionCount++;
             }
@@ -2539,24 +2537,22 @@ public class SpaceProbeRunner {
         }
         System.out.println("Total Space Probes with Solar Electric Propulsion:" + propulsionCount);
 
-        Iterator<SpaceProbeDTO> iterator3=spaceProbes.iterator();
-        int activeCount=0;
-        while (iterator3.hasNext()){
+        Iterator<SpaceProbeDTO> iterator3 = spaceProbes.iterator();
+        int activeCount = 0;
+        while (iterator3.hasNext()) {
             SpaceProbeDTO element = iterator3.next();
-            if(element.isActive())
-            {
+            if (element.isActive()) {
                 System.out.println(element);
                 activeCount++;
             }
         }
         System.out.println("Total Space Probes that are Active:" + activeCount);
 
-        Iterator<SpaceProbeDTO> iterator4= spaceProbes.iterator();
-        int marsCount=0;
-        while(iterator4.hasNext()){
+        Iterator<SpaceProbeDTO> iterator4 = spaceProbes.iterator();
+        int marsCount = 0;
+        while (iterator4.hasNext()) {
             SpaceProbeDTO element = iterator4.next();
-            if(element.getTargetCelestialBody().equals("Mars"))
-            {
+            if (element.getTargetCelestialBody().equals("Mars")) {
                 System.out.println(element);
                 marsCount++;
             }
@@ -2685,10 +2681,10 @@ public class SpaceProbeRunner {
         }
         System.out.println("Total Space Probes with launchMass greater than 1000 kg:" + massCount);
 
-       // Removal Questions
+        // Removal Questions
 
         Iterator<SpaceProbeDTO> removeIterator1 = spaceProbes.iterator();
-        int lostStatusCount=0;
+        int lostStatusCount = 0;
         while (removeIterator1.hasNext()) {
             SpaceProbeDTO element = removeIterator1.next();
             if (element.getStatus().equals("Lost")) {
@@ -2699,7 +2695,7 @@ public class SpaceProbeRunner {
         System.out.println("Removed probes with status Lost: " + lostStatusCount);
 
         Iterator<SpaceProbeDTO> removeIterator2 = spaceProbes.iterator();
-        int fuelRemovedCount=0;
+        int fuelRemovedCount = 0;
         while (removeIterator2.hasNext()) {
             SpaceProbeDTO element = removeIterator2.next();
             if (element.getFuelRemaining() < 10) {
@@ -2894,7 +2890,41 @@ public class SpaceProbeRunner {
         }
         System.out.println("Removed probes with manufacturer ISRO AND targetCelestialBody Moon: " + isroMoonRemovedCount);
 
-        //Multiple Property Conditions
-    }
+        // Conditional Check Questions
+        Iterator<SpaceProbeDTO> iterator16 = spaceProbes.iterator();
+        int countProposed = 0;
+        while (iterator16.hasNext()) {
+            SpaceProbeDTO element = iterator16.next();
+            if (element.getStatus().equals("Proposed")) {
+                System.out.println(element);
+                countProposed++;
+            }
 
+        }
+        System.out.println("Total Space Probes with status Proposed:" + countProposed);
+
+        Iterator<SpaceProbeDTO> iterator17 = spaceProbes.iterator();
+        int countRemainingfuel = 0;
+        while (iterator17.hasNext()) {
+            SpaceProbeDTO element = iterator17.next();
+            if (element.getFuelRemaining() > 0) {
+                System.out.println(element);
+                countRemainingfuel++;
+            }
+        }
+        System.out.println("Total Space Probes with fuelRemaining greater than 0:" + countRemainingfuel);
+
+        Iterator<SpaceProbeDTO> iterator18 = spaceProbes.iterator();
+        int countTarget=0;
+        while (iterator18.hasNext()) {
+            SpaceProbeDTO element = iterator18.next();
+            if (element.getTargetCelestialBody().equals("Jupiter")) {
+                System.out.println(element);
+                countTarget++;
+            }
+        }
+        System.out.println("Total Space Probes targeting Jupiter:" + countTarget);
+        
+
+    }
 }
