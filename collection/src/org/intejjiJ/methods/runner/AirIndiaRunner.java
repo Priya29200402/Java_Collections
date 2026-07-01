@@ -5,6 +5,7 @@ import org.intejjiJ.methods.dto.AirIndiaDTO;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class AirIndiaRunner {
     public static void main(String[] args) {
@@ -69,16 +70,30 @@ public class AirIndiaRunner {
         airIndiaDTOs.add(new AirIndiaDTO("Pallavi Joshi", "Pune", "Paris", "Pune International Airport", "Charles de Gaulle Airport", "India", "France", LocalDate.of(2026, 1, 13)));
         airIndiaDTOs.add(new AirIndiaDTO("Darshan Patil", "Belagavi", "Dubai", "Belagavi Airport", "Dubai International Airport", "India", "UAE", LocalDate.of(2026, 2, 19)));
 
-        System.out.println("Total Air India DTOs: " + airIndiaDTOs.size());
+        System.out.println("Total Air India DTOs:" + airIndiaDTOs.size());
 
-        //Contains method
+        System.out.println("==========addAll()==========");
+
+        List<AirIndiaDTO> newAirIndiaDTOs = new ArrayList<>();
+
+        newAirIndiaDTOs.add(new AirIndiaDTO("Ravi Kumar", "Delhi", "Dubai", "Indira Gandhi International Airport", "Dubai International Airport", "India", "UAE", LocalDate.of(2026, 3, 10)));
+        newAirIndiaDTOs.add(new AirIndiaDTO("Anusha Shetty", "Bengaluru", "Singapore", "Kempegowda International Airport", "Changi Airport", "India", "Singapore", LocalDate.of(2026, 4, 15)));
+        newAirIndiaDTOs.add(new AirIndiaDTO("Kiran Patil", "Mumbai", "London", "Chhatrapati Shivaji Maharaj International Airport", "Heathrow Airport", "India", "UK", LocalDate.of(2026, 5, 20)));
+
+        System.out.println("Size before addAll:" + airIndiaDTOs.size());
+
+        boolean addAllResult = airIndiaDTOs.addAll(newAirIndiaDTOs);
+
+        System.out.println("Data added using addAll:" + addAllResult);
+        System.out.println("Size after addAll:" + airIndiaDTOs.size());
+
+        System.out.println("\n==========contains()==========");
         AirIndiaDTO checkDTO = new AirIndiaDTO("Rahul Sharma", "Delhi", "New York", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5));
 
         boolean contains = airIndiaDTOs.contains(checkDTO);
         System.out.println("List contains Rahul Sharma data: " + contains);
 
-        //containsAll method
-        System.out.println("\n========== containsAll() ==========");
+        System.out.println("\n==========containsAll()==========");
         List<AirIndiaDTO> checkList = new ArrayList<>();
 
         checkList.add(new AirIndiaDTO("Rahul Sharma", "Delhi", "New York", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
@@ -86,19 +101,36 @@ public class AirIndiaRunner {
 
         boolean containsAllResult = airIndiaDTOs.containsAll(checkList);
 
-        System.out.println("Main list contains all checkList data: " + containsAllResult);
+        System.out.println("Main list contains all checkList data:" + containsAllResult);
 
-        //removeAll method
-        System.out.println("\n========== removeAll() ==========");
-        
-        System.out.println("Size before removeAll: " + airIndiaDTOs.size());
+        System.out.println("\n==========removeAll()==========");
+
+        System.out.println("Size before removeAll:" + airIndiaDTOs.size());
 
         boolean removeAllResult = airIndiaDTOs.removeAll(checkList);
 
         System.out.println("Data removed from main list:" + removeAllResult);
-        System.out.println("Size after removeAll: " + airIndiaDTOs.size());
+        System.out.println("Size after removeAll:" + airIndiaDTOs.size());
 
-        //
+        System.out.println("\n==========listIterator() Forward==========");
 
+        ListIterator<AirIndiaDTO> listIterator = airIndiaDTOs.listIterator();
+        while (listIterator.hasNext()){
+            AirIndiaDTO dto=listIterator.next();
+            System.out.println(dto);
+        }
+
+        System.out.println("\n==========listIterator() Backward==========");
+        while (listIterator.hasPrevious()){
+            AirIndiaDTO dto = listIterator.previous();
+            System.out.println(dto);
+        }
+
+        System.out.println("\n==========listIterator() from index 25==========");
+        ListIterator<AirIndiaDTO> listIterator2 = airIndiaDTOs.listIterator(25);
+        while (listIterator2.hasNext()){
+            AirIndiaDTO dto = listIterator2.next();
+            System.out.println(dto);
+        }
     }
 }
