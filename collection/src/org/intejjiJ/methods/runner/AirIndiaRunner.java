@@ -1,5 +1,6 @@
 package org.intejjiJ.methods.runner;
 
+import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
 import org.intejjiJ.methods.dto.AirIndiaDTO;
 
 import java.time.LocalDate;
@@ -132,5 +133,52 @@ public class AirIndiaRunner {
             AirIndiaDTO dto = listIterator2.next();
             System.out.println(dto);
         }
+
+        System.out.println("\n==========isEmpty()==========");
+        boolean checkEmpty = airIndiaDTOs.isEmpty();
+        System.out.println("List is empty:"+ checkEmpty);
+
+        System.out.println("\n=========add at specific index=========");
+        airIndiaDTOs.add(25, new AirIndiaDTO("Rohit Sharma", "Mumbai", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        System.out.println("Size after add at specific index:" + airIndiaDTOs.size());
+
+        System.out.println("\n=========addAll at specific index=========");
+        List<AirIndiaDTO> newAirIndiaDTOs2 = new ArrayList<>();
+        newAirIndiaDTOs2.add(new AirIndiaDTO("Ashok Varma", "Hyderabad", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        newAirIndiaDTOs2.add(new AirIndiaDTO("Sneha Yadav", "Kochi", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        newAirIndiaDTOs2.add(new AirIndiaDTO("Amit Sharma", "Delhi", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        airIndiaDTOs.addAll(25, newAirIndiaDTOs2);
+        System.out.println("Size after addAll at specific index:" + airIndiaDTOs.size());
+
+        System.out.println("\n=========get mathod from List=========");
+        System.out.println("Data at index 25:" + airIndiaDTOs.get(25));
+
+        System.out.println("\n=========set method=========");
+        airIndiaDTOs.set(25, new AirIndiaDTO("Shilpa Singh", "Panjab", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        System.out.println("Data at index 25 after set:" + airIndiaDTOs.get(25));
+
+        System.out.println("\n=========indexOf method=========");
+        int index = airIndiaDTOs.indexOf(new AirIndiaDTO("Shilpa Singh", "Panjab", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        System.out.println("Index of Shilpa Singh data:" + index);
+
+        System.out.println("\n=========lastIndexOf method=========");
+        int lastIndex = airIndiaDTOs.lastIndexOf(new AirIndiaDTO("Shilpa Singh", "Panjab", "India", "Indira Gandhi International Airport", "John F. Kennedy International Airport", "India", "USA", LocalDate.of(2022, 1, 5)));
+        System.out.println("Last index of Shilpa Singh data:" + lastIndex);
+
+        System.out.println("\n=========subList method=========");
+        List<AirIndiaDTO> subList = airIndiaDTOs.subList(25, 30);
+        System.out.println("SubList from index 25 to 30:" + subList);
+
+        System.out.println("\n===========ListIterator(int index)============");
+        ListIterator<AirIndiaDTO> listIterator3 = airIndiaDTOs.listIterator(25);
+        while (listIterator3.hasNext()){
+            AirIndiaDTO dto = listIterator3.next();
+            System.out.println(dto);
+        }
+
+        System.out.println("\n===========clear method============");
+        airIndiaDTOs.clear();
+        System.out.println("Size after clear:" + airIndiaDTOs.size());
+        
     }
 }
