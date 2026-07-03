@@ -179,6 +179,6 @@ public class AirIndiaRunner {
         System.out.println("\n===========clear method============");
         airIndiaDTOs.clear();
         System.out.println("Size after clear:" + airIndiaDTOs.size());
-        
+
     }
 }
