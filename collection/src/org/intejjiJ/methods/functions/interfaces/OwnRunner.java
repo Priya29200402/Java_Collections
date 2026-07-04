@@ -1,6 +1,6 @@
 package org.intejjiJ.methods.functions.interfaces;
 
-public class ownRunner {
+public class OwnRunner {
     public static void main(String[] args) {
         SmartWatchPriceCalculator priceCalculator = (basePrice) -> basePrice;
         System.out.println("Price:" + priceCalculator.calculatePrice(1000));
