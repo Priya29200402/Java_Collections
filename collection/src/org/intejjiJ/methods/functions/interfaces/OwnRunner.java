@@ -129,5 +129,71 @@ public class OwnRunner {
 
         FuelCostCalculator fuelCostCalculator = (liters) -> liters * 85.0;
         System.out.println("FuelCostCalculator:" + fuelCostCalculator.calculate(10));
+
+        Book book = (name) -> 100;
+
+        Movie movie=(name)->100;
+
+        Ticket ticket=(name)->100;
+
+        Pen pen=(name)->100;
+
+        Laptop laptop=(name)-> "HP";
+
+        LaptopValidator laptopValidator=(name)->true;
+
+        PenValidator penValidator=(name)->true;
+
+        TicketValidator ticketValidator=(name)->true;
+
+        Cloth cloth=(name)-> "Red";
+
+        Curtain curtain=()-> System.out.println("Curtain Opened");
+
+        Ring ring=(type)->  21000;
+
+        Bottle bottle=(type)->  300;
+
+        Youtube youtube=()-> System.out.println("Playing song on YouTube");
+
+        Blanket blanket=()-> System.out.println("Blanket is warm");
+
+        Sofa sofa=()-> System.out.println("Sofa is comfortable");
+
+        Clip clip=()-> System.out.println("Clip is attached to curtain");
+
+        Charger charger=()-> System.out.println("I put my mobile in charging");
+
+        Cubboard cubboard=()-> System.out.println("I stored my clothes in cubboard");
+
+        Table table=()-> System.out.println("I placed my books on the table");
+
+        Bike bike=()-> System.out.println("I am going to solo trip in my bike");
+
+        Slipper slipper=(price)-> 8;
+
+        Knife knife=()-> System.out.println("I am cutting the onion");
+
+        Pillow pillow=()-> System.out.println("I cannot sleep without pillow");
+
+        Broom broom=()-> System.out.println("I am sweeping the floor");
+
+        StudyTable studyTable=()-> System.out.println("I am studying on the table");
+
+        Library library=()-> System.out.println("I going to library everyday and reading books");
+
+        Wall wall=()-> System.out.println("I want to paint my home wall levendar color");
+
+        Door door=()-> System.out.println("Please Open the door");
+
+        Fan fan=()-> System.out.println("Why Fan is rotating Anti-Clockwise?");
+
+        Watch watch=()-> System.out.println("I need to charge my Smart Watch");
+
+        Priyanka priyanka=()-> System.out.println("Good Priyanka You Successfully Completed 58 lambda Expressions");
+
+
+
+
     }
 }

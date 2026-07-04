@@ -137,5 +137,169 @@ interface FuelCostCalculator{
     double calculate(double liters);
 }
 
+@FunctionalInterface
+interface Book{
+    double getBookPrice(String name);
+}
+
+@FunctionalInterface
+interface Movie{
+    double getMoviePrice(String name);
+}
+
+@FunctionalInterface
+interface Ticket{
+    double getTicketPrice(String name);
+}
+
+@FunctionalInterface
+interface TicketGenerator{
+    String generate(String name);
+}
+
+@FunctionalInterface
+interface TicketValidator{
+    boolean validate(String name);
+}
+
+@FunctionalInterface
+interface Pen{
+    int getPenPrice(String name);
+}
+
+@FunctionalInterface
+interface PenValidator{
+    boolean validate(String name);
+}
+
+@FunctionalInterface
+interface Laptop{
+    String getBrand(String name);
+}
+
+@FunctionalInterface
+interface LaptopValidator{
+    boolean validate(String name);
+}
+
+@FunctionalInterface
+interface Cloth{
+    String getColor(String name);
+}
+
+@FunctionalInterface
+interface Curtain{
+    void open();
+}
+
+@FunctionalInterface
+interface Ring{
+    double getPrice(String type);
+}
+
+@FunctionalInterface
+interface Bottle{
+    double getPrice(String type);
+}
+
+@FunctionalInterface
+interface Youtube{
+    void play();
+}
+
+@FunctionalInterface
+interface Blanket{
+    void warm();
+}
+
+@FunctionalInterface
+interface Sofa{
+    void relax();
+}
+
+@FunctionalInterface
+interface Clip{
+    void attach();
+}
+
+@FunctionalInterface
+interface Charger{
+    void charge();
+}
+
+@FunctionalInterface
+interface Cubboard{
+    void store();
+}
+
+//47
+@FunctionalInterface
+interface Table{
+    void place();
+}
+
+//48
+@FunctionalInterface
+interface Bike{
+    void ride();
+}
+
+@FunctionalInterface
+interface Slipper{
+    int size(double price);
+}
+
+@FunctionalInterface
+interface Knife{
+    void cut();
+}
+
+@FunctionalInterface
+interface Pillow{
+    void sleep();
+}
+
+@FunctionalInterface
+interface Broom{
+    void sweep();
+}
+
+@FunctionalInterface
+interface StudyTable{
+    void study();
+}
+
+@FunctionalInterface
+interface Library{
+    void read();
+}
+
+@FunctionalInterface
+interface Wall{
+    void paint();
+}
+
+@FunctionalInterface
+interface Door{
+    void open();
+}
+
+@FunctionalInterface
+interface Fan{
+    void rotate();
+}
+
+@FunctionalInterface
+interface Watch{
+    void charge();
+}
+
+@FunctionalInterface
+interface Priyanka{
+    void work();
+}
+
+
+
 
 
