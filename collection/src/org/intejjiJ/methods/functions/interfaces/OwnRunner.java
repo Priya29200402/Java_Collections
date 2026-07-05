@@ -123,12 +123,12 @@ public class OwnRunner {
         System.out.println("=======================");
 
         BedAvailabilityChecker bedAvailabilityChecker = (beds) -> beds > 0;
-        System.out.println("BedAvailabilityChecker:" + bedAvailabilityChecker.available(5));
+
 
         System.out.println("=======================");
 
         FuelCostCalculator fuelCostCalculator = (liters) -> liters * 85.0;
-        System.out.println("FuelCostCalculator:" + fuelCostCalculator.calculate(10));
+
 
         Book book = (name) -> 100;
 
