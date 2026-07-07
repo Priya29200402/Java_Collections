@@ -130,6 +130,10 @@ public class Country {
                 System.out.println(country);
         }
 
-
+        System.out.println("=============Filtering countries with two or more words=================");
+        countries.stream()
+                .filter(country -> country.trim().split("\\s+").length >= 2)
+                .forEach(country -> System.out.println(country));
+        
     }
 }
