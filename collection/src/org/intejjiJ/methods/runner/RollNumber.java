@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MobileRunner {
+public class RollNumber {
     public static void main(String[] args) {
         List<Integer> rollNumbers = new ArrayList<>();
         rollNumbers.add(9);
