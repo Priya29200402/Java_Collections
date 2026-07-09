@@ -12,9 +12,9 @@ import java.io.Serializable;
 @ToString
 @Setter
 public class TraineeDTO implements Serializable,Comparable<TraineeDTO> {
-    String name;
-    int rollNumber;
-    String branch;
+    private String name;
+    private int rollNumber;
+    private String branch;
 
     @Override
     public int compareTo(TraineeDTO o) {

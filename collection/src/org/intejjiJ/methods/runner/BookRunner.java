@@ -17,6 +17,7 @@ public class BookRunner {
         books.add(new BookDTO("The Power of Now", 300));
         books.add(new BookDTO("Atomic Habits", 200));
 
+        System.out.println("Books sorting by price");
         Collections.sort(books);
         books.forEach(bookDTO -> System.out.println(bookDTO));
     }

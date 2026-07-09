@@ -10,9 +10,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @ToString
 public class StudyTableDTO implements Serializable, Comparable<StudyTableDTO> {
-    String color;
-    double price;
-    String material;
+    private String color;
+    private double price;
+    private String material;
 
     @Override
     public int compareTo(StudyTableDTO o) {

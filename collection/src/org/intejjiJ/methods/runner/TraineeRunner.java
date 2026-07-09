@@ -16,6 +16,7 @@ public class TraineeRunner {
         trainees.add(new TraineeDTO("Charlie", 5, "EC"));
         trainees.add(new TraineeDTO("David", 6, "ME"));
 
+        System.out.println("Trainees sorting by id");
         Collections.sort(trainees);
         trainees.forEach(traineeDTO -> System.out.println(traineeDTO));
     }
