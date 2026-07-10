@@ -19,9 +19,7 @@ public class AirportRunner {
         airports.add(new AirportDTO("Goa International Airport", 8000000));
 
         airports.stream()
-                .sorted((a1, a2) ->
-                        Integer.compare(a1.getPassengerCapacity(),
-                                a2.getPassengerCapacity()))
+                .sorted((a1, a2) -> Integer.compare(a1.getPassengerCapacity(), a2.getPassengerCapacity()))
                 .forEach(airport -> System.out.println(airport));
     }
 }
