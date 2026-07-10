@@ -14,15 +14,10 @@ import java.util.Comparator;
 @ToString
 @AllArgsConstructor
 
-public class MetroStationDTO implements Serializable, Comparator<MetroStationDTO> {
+public class MetroStationDTO implements Serializable {
 
     private String stationName;
     private int dailyPassengers;
     private double distanceFromCityCenter;
     private int platforms;
-
-    @Override
-    public int compare(MetroStationDTO o1, MetroStationDTO o2) {
-        return 0;
-    }
 }
