@@ -3,6 +3,7 @@ package org.intejjiJ.terminal.runner;
 import org.intejjiJ.terminal.dto.DiseaseDTO;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class DiseaseRunner {
@@ -35,7 +36,22 @@ public class DiseaseRunner {
         diseases.stream()
                 .map(disease -> disease.getName().toLowerCase())
                 .forEach(disease -> System.out.println(disease));
-        
+
+        System.out.println("Get length of each string 'H'");
+        diseases.stream()
+                .filter(disease -> disease.getName().startsWith("H"))
+                .forEach(disease -> System.out.println(disease));
+
+        System.out.println("Filter numbers id > 10, then double them ");
+        diseases.stream()
+                .filter(disease -> disease.getId() > 10)
+                .map(disease -> disease.getId() * 2)
+                .forEach(disease -> System.out.println(disease));
+
+        System.out.println(" Remove null values from a list");
+        diseases.stream()
+                .filter(disease -> disease.getName() != null)
+                .forEach(disease -> System.out.println(disease));
 
     }
 }
