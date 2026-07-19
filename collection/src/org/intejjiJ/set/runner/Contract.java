@@ -15,6 +15,7 @@ public class Contract {
         snackSet.add(new SnackDTO("KurKure", "Spicy", 30, 10));
         snackSet.add(new SnackDTO("Aa", "Spicy", 30, 10));
         snackSet.add(new SnackDTO("BB", "Spicy", 30, 10));
+        snackSet.add(new SnackDTO("Aa", "Spicy", 30, 10));
 
         System.out.println("Snacks in the set:"+snackSet.size());
         System.out.println("hashCodes");

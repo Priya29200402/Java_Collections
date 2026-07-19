@@ -19,6 +19,7 @@ public class SnackDTO implements Serializable,Comparable<SnackDTO> {
     @Override
     public int compareTo(SnackDTO o) {
         return this.name.compareTo(o.name);
+
     }
 
     @Override
