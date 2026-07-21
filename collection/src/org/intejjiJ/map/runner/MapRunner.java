@@ -15,6 +15,7 @@ public class MapRunner {
 
         System.out.println("========Print both key and value========");
         System.out.println("Size :"+ userIds.size());
+        userIds.forEach((key,value)-> System.out.println("Key:"+key+" Value:"+value));
 
         System.out.println("========Print only keys=======");
         System.out.println("Only Keys:"+ userIds.keySet());

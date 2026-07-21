@@ -1,9 +1,6 @@
 package org.intejjiJ.map.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -11,6 +8,7 @@ import java.io.Serializable;
 @Setter
 @AllArgsConstructor
 @ToString
+@EqualsAndHashCode
 
 public class ChiefMinisterDTO implements Serializable {
     private String name;
